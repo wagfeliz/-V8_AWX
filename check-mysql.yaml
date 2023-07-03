@@ -1,7 +1,6 @@
 ---
-- name: Test playbook
-  hosts: localhost
-  connection: local
+- name: Test Mysql
+  hosts: all
   tasks:
     - name: Database exists
       mysql_db:
