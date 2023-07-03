@@ -1,0 +1,10 @@
+---
+- name: Test playbook
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Database exists
+      mysql_db:
+        name: some_db
+        state: present
+      register: database_exists
